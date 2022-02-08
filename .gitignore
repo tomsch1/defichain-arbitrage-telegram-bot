@@ -1,3 +1,13 @@
+#user data
+stock_alarms.json
+crypto_alarms.json
+
+#config
+application.properties
+
+#pycharm
+.idea/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
