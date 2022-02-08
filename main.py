@@ -30,7 +30,7 @@ token = tg_token
 
 
 # Enable logging
-logging.basicConfig(
+logging.basicConfig(filename="application.log",
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO
 )
 
