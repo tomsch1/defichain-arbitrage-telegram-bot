@@ -1,0 +1,19 @@
+
+[Unit]
+Description=defichain-arbitrage-telgram-bot
+After=syslog.target
+
+[Service]
+User=pi
+WorkingDirectory=/home/ubuntu/defichain-arbitrage-telgram-bot/
+ExecStart=/usr/bin/python3 /home/ubuntu/defichain-arbitrage-telgram-bot/main.py
+SuccessExitStatus=143
+Restart=always
+RestartSec=30
+NotifyAccess=all
+PermissionsStartOnly=true
+StandardOutput=null
+StandardError=syslog
+
+[Install]
+WantedBy=multi-user.target
