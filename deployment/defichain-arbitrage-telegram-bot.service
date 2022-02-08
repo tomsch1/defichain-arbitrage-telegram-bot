@@ -1,12 +1,12 @@
 
 [Unit]
-Description=defichain-arbitrage-telgram-bot
+Description=defichain-arbitrage-telegram-bot
 After=syslog.target
 
 [Service]
-User=pi
-WorkingDirectory=/home/ubuntu/defichain-arbitrage-telgram-bot/
-ExecStart=/usr/bin/python3 /home/ubuntu/defichain-arbitrage-telgram-bot/main.py
+User=ubuntu
+WorkingDirectory=/home/ubuntu/defichain-arbitrage-telegram-bot/
+ExecStart=/usr/bin/python3 /home/ubuntu/defichain-arbitrage-telegram-bot/main.py
 SuccessExitStatus=143
 Restart=always
 RestartSec=30
